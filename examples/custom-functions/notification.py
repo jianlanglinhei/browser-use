@@ -35,7 +35,7 @@ async def done(text: str):
 
 
 async def main():
-	task = 'go to brower-use.com and then done'
+    task = 'go to browser-use.com and then done'
 	model = ChatOpenAI(model='gpt-4o')
 	agent = Agent(task=task, llm=model, controller=controller)
 
